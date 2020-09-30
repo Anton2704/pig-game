@@ -103,6 +103,12 @@ function init() {
   roundScore = 0;
   gamePlaying = true; 
 
+/*   let player1 = document.querySelector('#name-0');
+  let player2 = document.querySelector('#name-1');
+
+  player1.innerHTML = prompt('Input first player`s name');
+  player2.textContent = prompt('Input second player`s name'); */
+
   document.getElementById('dice-1').style.display = 'none';
   document.getElementById('dice-2').style.display = 'none';
  
@@ -113,8 +119,8 @@ function init() {
   document.getElementById('current-0').textContent = '0';
   document.getElementById('current-1').textContent = '0';
 
-  document.getElementById('name-0').textContent = 'Player 1';
-  document.getElementById('name-1').textContent = 'Player 2';
+  document.getElementById('name-0').textContent = prompt('Input first player`s name');
+  document.getElementById('name-1').textContent = prompt('Input second player`s name');
   document.querySelector('.player-0-panel').classList.remove('winner');
   document.querySelector('.player-1-panel').classList.remove('winner');
   document.querySelector('.player-0-panel').classList.remove('active');
